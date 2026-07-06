@@ -132,7 +132,7 @@ const RESOURCES: ResourceItem[] = [
   { title: "NECEC Maine Case Study", type: "case-study", step: "Monitor", description: "Maine transmission line CBA with independent fund administration that survived legal challenges.", tags: ["case-study", "renewable-energy", "monitor"] },
   { title: "Offshore Wind CBAs in California (Berkeley Law)", type: "external", step: "Prepare", description: "Comprehensive analysis of offshore wind community benefits agreements.", tags: ["external", "renewable-energy", "research"] },
   { title: "Community Benefits Agreements Case Studies (CATF)", type: "external", step: "Prepare", description: "Federal guidelines and best practices for community benefits agreements.", tags: ["external", "research", "federal"] },
-  { title: "Columbia Law CBA Database", type: "external", step: "Prepare", description: "Searchable database of community benefits agreements nationwide.", tags: ["external", "research", "database"] },
+  { title: "CBA Database", type: "external", step: "Prepare", description: "Searchable database of community benefits agreements nationwide.", tags: ["external", "research", "database"] },
   { title: "Wind Energy Community Benefits Guide (DOE)", type: "external", step: "Engage", description: "DOE guide to community benefits in wind energy projects.", tags: ["external", "renewable-energy", "federal"] },
 ];
 
@@ -480,7 +480,7 @@ function SubPage({ pageId, onBack }: { pageId: PageId; onBack: () => void }) {
               { n: "02", title: "Use the 6-Step Process", desc: "Scroll down to find the six step accordions: Prepare → Engage → Negotiate → Draft → Monitor → Enforce. Each step expands to reveal detailed guidance, checklists, and downloadable resources.", icon: <ChevronDown size={16} /> },
               { n: "03", title: "Download Templates & Worksheets", desc: "Look for the 'Template' and 'Worksheet' badges inside each step. These are ready-to-use starting points for your coalition or municipality.", icon: <Download size={16} /> },
               { n: "04", title: "Browse the Resource Library", desc: "Scroll below the 6-step section to find all templates, case studies (Block Island, Calverton, Detroit, NECEC), and external links in a searchable, filterable collection.", icon: <BookOpen size={16} /> },
-              { n: "05", title: "Explore the CBA Database", desc: "Access the Columbia Law CBA Database to browse real-world agreements from communities nationwide. Use these as models and benchmarks when negotiating your own CBA.", icon: <Database size={16} /> },
+              { n: "05", title: "Explore the CBA Database", desc: "[description of database]", icon: <Database size={16} /> },
               { n: "06", title: "Use the Glossary", desc: "Key terms throughout the dashboard are defined in the glossary, accessible from the main navigation. Reference it anytime to clarify terminology.", icon: <Search size={16} /> },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 border-b last:border-0" style={{ borderColor: P.border, backgroundColor: i % 2 === 0 ? "#fff" : "#F8F5FF" }}>
@@ -683,7 +683,7 @@ export default function App() {
             <LandingCard pageId="how-to" title="How to Use It →" desc="A quick orientation to the 6-step toolkit, resource library, glossary, and CBA database." color={P.warmBlue} bgColor="#EEF3FB" emoji="🗺️" onClick={() => openPage("how-to")} />
             {/* CBA Database — external link */}
             <a
-              href="https://climate.law.columbia.edu/content/community-benefits-agreements-database"
+              href="https://renewable-energy.mit.edu/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-left rounded-3xl border-2 overflow-hidden flex flex-col transition-all duration-200 cursor-pointer no-underline group"
@@ -697,7 +697,7 @@ export default function App() {
               </div>
               <div className="px-6 py-4 flex-1 flex flex-col gap-2">
                 <h3 className="font-bold text-base leading-snug" style={{ fontFamily: "Playfair Display, serif", color: P.brown }}>CBA Database</h3>
-                <p className="text-xs leading-relaxed flex-1" style={{ color: P.muted }}>Browse real-world Community Benefits Agreements from across the country at the Columbia Law School CBA Database.</p>
+                <p className="text-xs leading-relaxed flex-1" style={{ color: P.muted }}>Browse real-world Community Benefits Agreements from across the country.</p>
                 <div className="text-xs font-bold mt-2" style={{ color: "#4A7C59" }}>Open database ↗</div>
               </div>
             </a>
